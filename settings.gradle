@@ -1,0 +1,3 @@
+
+rootProject.name = "zsh(中石化)"
+include ':app'
