@@ -1,6 +1,7 @@
 package cn.sichuan.cd.zsh.mvvm
 
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -25,6 +26,23 @@ class LoginsActivity : AppCompatActivity() {
         binding.lifecycleOwner = this
 
         Toast.makeText(this, "启动成功", Toast.LENGTH_SHORT).show()
+
+    var muserinfor=UserInfo();
+
+        muserinfor.name.set("张三");
+        muserinfor.pwd.set("123");
+        binding.userinformation=muserinfor;
+        Log.d("-------------LoginsActivity-----------","----------name---------${muserinfor.name}-----");
+        Log.d("-------------LoginsActivity-----------","----------pwd---------${muserinfor.pwd}-----");
+
+      Handler().postDelayed(Runnable {
+
+          muserinfor.name.set("赵四");
+          muserinfor.pwd.set("321");
+          Log.d("-------------LoginsActivity-----------","----Handler------name---------${muserinfor.name}-----");
+          Log.d("-------------LoginsActivity-----------","-----Handler-----pwd---------${muserinfor.pwd}-----");
+
+      },3000);
 
         // 监听登录状态变化
         viewModel.loginStatus.observe(this, Observer { isSuccess ->

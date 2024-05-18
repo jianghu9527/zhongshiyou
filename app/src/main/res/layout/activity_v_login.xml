@@ -7,6 +7,13 @@
         <variable
             name="viewModel"
             type="cn.sichuan.cd.zsh.mvvm.LoginViewModel" />
+        <variable
+            name="userinformation"
+            type="cn.sichuan.cd.zsh.mvvm.UserInfo" />
+
+
+
+
     </data>
 
     <LinearLayout
@@ -20,6 +27,7 @@
             android:id="@+id/et_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:addTextChangedListener="@{viewModel.nameInputListener}"
             android:hint="Username"
             android:text="@={viewModel.username}" />
 
@@ -35,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
+
             android:onClick="@{() -> viewModel.login()}" />
 
         <Button

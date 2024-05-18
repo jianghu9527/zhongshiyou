@@ -1,7 +1,10 @@
 package cn.sichuan.cd.zsh.mvvm
 
 import android.app.Application
+import android.text.Editable
+import android.text.TextWatcher
 import android.util.Log
+import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.MutableLiveData
@@ -19,13 +22,12 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
     init {
         val userDao = AppDatabase.getDatabase(application).userDao()
         repository = UserRepository(userDao)
-        loadUser("default_user") // 加载默认用户
+        loadUser() // 加载默认用户
     }
 
 //    fun login(username: String, password: String) {
        fun login() {
             viewModelScope.launch {
-
 
             if (username.value!!.isEmpty()|| password.value!!.isEmpty()){
                 Toast.makeText(getApplication(), "用户名或密码不能为空", Toast.LENGTH_SHORT).show();
@@ -37,6 +39,8 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
                 saveUser() // 登录成功后保存用户数据
             }
 
+                Log.d("----------login---------------", "-----password-----------"+username.value);
+                Log.d("----------login---------------", "------password----------"+password.value);
             repository.deleteAllUsers();
             var   muser= User(username.value.toString(), password.value.toString());
             repository.insert(muser);
@@ -61,7 +65,7 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    fun loadUser(username: String) {
+    fun loadUser() {
         viewModelScope.launch {
             val user =   repository.getUserNamePassWord();
             if (user != null) {
@@ -89,4 +93,44 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
             }
         }
     }
+
+    var  Userinfor =UserInfo();
+//    binding.setLoginViewModel(this);
+//    binding.setUserInfo(Userinfor);
+
+
+     var nameInputListener: TextWatcher = object : TextWatcher {
+        override fun beforeTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
+
+        }
+        override fun onTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
+            Userinfor.name.set( charSequence.toString())  ;
+            Log.d("---------LoginViewModel---------","----------nameInputListener-------------------------${Userinfor.name}");
+        }
+        override fun afterTextChanged(editable: Editable) {
+
+        }
+    }
+
+    var pwdInputListener: TextWatcher = object : TextWatcher {
+        override fun beforeTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
+
+        }
+        override fun onTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
+            Userinfor.pwd.set( charSequence.toString())  ;
+
+            Log.d("---------LoginViewModel---------","----------pwdInputListener-------------------------${Userinfor.pwd}");
+
+        }
+        override fun afterTextChanged(editable: Editable) {
+
+        }
+    }
+
+    var mlickButtom = View.OnClickListener {
+
+        Log.d("---------LoginViewModel---------","----------mlickButtom-------------------------${Userinfor.name}");
+        Log.d("---------LoginViewModel---------","----------mlickButtom-------------------------${Userinfor.pwd}");
+    }
+
 }
