@@ -26,23 +26,26 @@ class LoginsActivity : AppCompatActivity() {
         binding.lifecycleOwner = this
 
         Toast.makeText(this, "启动成功", Toast.LENGTH_SHORT).show()
+        var muserinfor=UserInfo();
 
-    var muserinfor=UserInfo();
+//        muserinfor.name.set("张三");
+//        muserinfor.pwd.set("123");
 
-        muserinfor.name.set("张三");
-        muserinfor.pwd.set("123");
-        binding.userinformation=muserinfor;
-        Log.d("-------------LoginsActivity-----------","----------name---------${muserinfor.name}-----");
-        Log.d("-------------LoginsActivity-----------","----------pwd---------${muserinfor.pwd}-----");
+//        viewModel.loadUser();
 
-      Handler().postDelayed(Runnable {
 
-          muserinfor.name.set("赵四");
-          muserinfor.pwd.set("321");
-          Log.d("-------------LoginsActivity-----------","----Handler------name---------${muserinfor.name}-----");
-          Log.d("-------------LoginsActivity-----------","-----Handler-----pwd---------${muserinfor.pwd}-----");
+//        binding.userinformation=muserinfor;
+        Log.d("-------------LoginsActivity-----------","----------name-------------${muserinfor.name.get()}");
+        Log.d("-------------LoginsActivity-----------","----------pwd--------------${muserinfor.pwd.get()}");
 
-      },3000);
+//      Handler().postDelayed(Runnable {
+//
+////          muserinfor.name.set("赵四");
+////          muserinfor.pwd.set("321");
+//          Log.d("-------------LoginsActivity-----------","----Handler------name---------${muserinfor.name.get()}-----");
+//          Log.d("-------------LoginsActivity-----------","-----Handler-----pwd---------${muserinfor.pwd.get()}-----");
+//
+//      },20000);
 
         // 监听登录状态变化
         viewModel.loginStatus.observe(this, Observer { isSuccess ->
@@ -52,11 +55,21 @@ class LoginsActivity : AppCompatActivity() {
                 // 登录成功的逻辑处理
                 Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
 
-                Log.d("--------------------------","--------------loginStatus-----1-------"+viewModel.password.value);
-                Log.d("--------------------------","--------------loginStatus-----2-------"+viewModel.username.value);
+                Log.d("--------------------------","--------------loginStatus-----1-------password："+viewModel.password.value);
+                Log.d("--------------------------","--------------loginStatus-----2-------username："+viewModel.username.value);
             } else {
                 // 登录失败的逻辑处理
                 Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()
+            }
+        });
+
+
+        viewModel.mUserData.observe(this,Observer{
+            mUserData->
+            if (mUserData!=null&&mUserData.size>0){
+                Log.d("--------------------------","--------------loginStatus----mUserData------mUserData："+mUserData.size);
+            }else{
+                Log.d("--------------------------","--------------00000000000----mUserData------：");
             }
 
         })

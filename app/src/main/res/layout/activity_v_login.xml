@@ -52,11 +52,11 @@
             android:text="Save"
             android:onClick="@{() -> viewModel.saveUser()}" />
 
-<!--        <Button-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:text="Check"-->
-<!--            android:onClick="@{() -> viewModel.loadAllUser()}" />-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check"
+            android:onClick="@{() -> viewModel.loadAllUser()}" />
 
 
 

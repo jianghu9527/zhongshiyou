@@ -7,8 +7,12 @@ import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.launch
 
 // LoginViewModel.kt
@@ -46,8 +50,8 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
             repository.insert(muser);
             Toast.makeText(getApplication(), "账号保存成功", Toast.LENGTH_SHORT).show();
 
-            Log.d("----------login---------------","--------------loginStatus-----1-------"+username .value.toString());
-            Log.d("----------login---------------","--------------loginStatus-----2-------"+password.value.toString());
+            Log.d("----------login---------------","--------login------loginStatus-----1-------"+username .value.toString());
+            Log.d("----------login---------------","--------login------loginStatus-----2-------"+password.value.toString());
 
 
         }
@@ -58,8 +62,8 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
             val user =  User(username.value ?: "", password.value ?: "")
             repository.insert(user)
 
-            Log.d("----------saveUser---------------","--------------loginStatus-----1-------"+user.password );
-            Log.d("----------saveUser---------------","--------------loginStatus-----2-------"+user.username );
+            Log.d("----------saveUser---------------","----saveUser----------loginStatus-----1-------"+user.password );
+            Log.d("----------saveUser---------------","-----saveUser---------loginStatus-----2-------"+user.username );
 
 
         }
@@ -69,9 +73,8 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
         viewModelScope.launch {
             val user =   repository.getUserNamePassWord();
             if (user != null) {
-                Log.d("----------loadUser---------------","--------------loginStatus-----1-------"+user.password );
-                Log.d("----------loadUser---------------","--------------loginStatus-----2-------"+user.username );
-
+                Log.d("----------loadUser---------------","----loadUser----------loginStatus-----2-------"+user.username );
+                Log.d("----------loadUser---------------","----loadUser----------loginStatus-----1-------"+user.password );
 
                 this@LoginViewModel.username.value = user.username
                 this@LoginViewModel.password.value = user.password
@@ -80,17 +83,22 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
     }
 
 
+    private val _UserData = MutableLiveData<List<User>>()
+    val mUserData: LiveData<List<User>> = _UserData
+
     fun loadAllUser() {
         // 假设我们有一个异步的函数来加载数据
         // 这里只是简单地模拟一下
-        viewModelScope.launch {
+        viewModelScope.launch (Dispatchers.IO){
             val user =   repository.loadAllUsers();
-            if (user != null&& user.value?.size!! >0) {
-                Log.d("----------loadUser---------------","--------------loginStatus-----1-------"+user.value?.size!!);
 
-
-
-            }
+            _UserData.postValue(user);
+//            if (user != null&& user.value?.size!! >0) {
+//                Log.d("----------loadUser---------------","---loadAllUser-----------loginStatus-----1-------"+user.value?.size!!);
+//
+//
+//
+//            }
         }
     }
 

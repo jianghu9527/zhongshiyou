@@ -22,7 +22,7 @@ interface LoginUserDao {
     suspend fun deleteAllUsers()
 
     @Query("SELECT * FROM userslogin")
-    fun getAllUsers(): LiveData<List<User>>
+    fun getAllUsers():  List<User>
 
 }
 

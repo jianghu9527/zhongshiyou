@@ -1,6 +1,10 @@
 package cn.sichuan.cd.zsh.mvvm
 
+import android.annotation.SuppressLint
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
+import kotlinx.coroutines.flow.MutableSharedFlow
+import kotlinx.coroutines.flow.SharedFlow
 
 // UserRepository.kt
 class UserRepository(private val userDao:  LoginUserDao) {
@@ -22,8 +26,11 @@ class UserRepository(private val userDao:  LoginUserDao) {
         return userDao.deleteAllUsers()
     }
 
-    suspend fun  loadAllUsers(): LiveData<List<User>> {
+
+
+    suspend fun  loadAllUsers():  List<User>  {
      var mlist=   userDao.getAllUsers();
+
         return mlist;
     }
 }
