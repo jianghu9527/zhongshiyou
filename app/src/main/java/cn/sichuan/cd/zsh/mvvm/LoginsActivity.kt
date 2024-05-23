@@ -1,5 +1,6 @@
 package cn.sichuan.cd.zsh.mvvm
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.util.Log
@@ -75,7 +76,40 @@ class LoginsActivity : AppCompatActivity() {
         })
 
 
+
+        binding.videoPlayer.setOnClickListener {
+            Log.d("--------------------------","--------------录制视频------------");
+            val intent = Intent(this, VideoActivity::class.java)
+            startActivity(intent)
+
+
+        }
+
+
+
+
+//************************************************************************************
+        //第二种方法
+        // 观察用户名的变化
+        viewModel.usernamem.observe(this, Observer { username ->
+            binding.etUsername.setText(username)
+        })
+
+        // 观察密码的变化
+        viewModel.passwordm.observe(this, Observer { password ->
+            binding.etPassword .setText(password)
+        })
+
+        // 设置登录按钮的点击事件
+        binding.loginButton.setOnClickListener {
+            viewModel.setUsername( binding.etUsername.text.toString())
+            viewModel.setPassword( binding.etPassword.text.toString())
+            viewModel.login()
+        }
+
+
     }
+
 }
 
 

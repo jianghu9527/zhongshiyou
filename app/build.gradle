@@ -92,6 +92,20 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.7.0")
+    implementation 'com.squareup.okhttp3:okhttp:4.9.1'
 
+    implementation  'io.github.scwang90:refresh-layout-kernel:2.1.0'      //核心必须依赖
+    implementation  'io.github.scwang90:refresh-header-classics:2.1.0'    //经典刷新头
+    implementation 'com.blankj:utilcodex:1.31.0'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation 'com.afollestad.material-dialogs:core:3.3.0'
+    implementation 'com.afollestad.material-dialogs:lifecycle:3.3.0'
 
+    implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.11.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.9.3'
+    implementation "io.github.cymchad:BaseRecyclerViewAdapterHelper4:4.1.4"
+
+    implementation("io.coil-kt:coil:2.6.0")
+    implementation 'io.github.youth5201314:banner:2.2.2'
 }

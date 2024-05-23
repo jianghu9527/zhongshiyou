@@ -14,6 +14,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 // LoginViewModel.kt
 class LoginViewModel(application: Application) : AndroidViewModel(application) {
@@ -78,6 +79,8 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
 
                 this@LoginViewModel.username.value = user.username
                 this@LoginViewModel.password.value = user.password
+
+                Log.d("-------------------------------------","-----------loadUser----------------界面绑定----------");
             }
         }
     }
@@ -93,18 +96,11 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
             val user =   repository.loadAllUsers();
 
             _UserData.postValue(user);
-//            if (user != null&& user.value?.size!! >0) {
-//                Log.d("----------loadUser---------------","---loadAllUser-----------loginStatus-----1-------"+user.value?.size!!);
-//
-//
-//
-//            }
+
         }
     }
 
     var  Userinfor =UserInfo();
-//    binding.setLoginViewModel(this);
-//    binding.setUserInfo(Userinfor);
 
 
      var nameInputListener: TextWatcher = object : TextWatcher {
@@ -135,10 +131,34 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
         }
     }
 
-    var mlickButtom = View.OnClickListener {
 
-        Log.d("---------LoginViewModel---------","----------mlickButtom-------------------------${Userinfor.name}");
-        Log.d("---------LoginViewModel---------","----------mlickButtom-------------------------${Userinfor.pwd}");
+//************************************************************************************
+//第二种写法
+
+    private val _usernamem = MutableLiveData<String>()
+    val usernamem : LiveData<String> get() = _usernamem
+
+    private val _passwordm  = MutableLiveData<String>()
+    val passwordm : LiveData<String> get() = _passwordm
+
+    fun setUsername(newUsername: String) {
+        _usernamem .value = newUsername // 更新值并通知观察者
     }
+
+    fun setPassword(newPassword: String) {
+        _passwordm .value = newPassword // 更新值并通知观察者
+    }
+
+    fun loginUserName() {
+        // 假设进行一些登录操作
+        viewModelScope.launch(Dispatchers.IO) {
+            //这个去读取数据和网络，然后更新UI
+//            val result = repository.login(_username.value ?: "", _password.value ?: "")
+//            withContext(Dispatchers.Main) {
+//                // 更新UI
+//            }
+        }
+    }
+
 
 }
