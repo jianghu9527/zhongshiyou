@@ -18,17 +18,15 @@ class HomeRepository private constructor(
     private val netWork: HomeNetWork
 ) : BaseModel() {
 
-//    fun getBannerData(refresh: Boolean): Flow<BaseResult<List<BannerBean>>> {
-//        val cacheModel =
-//            if (refresh) CacheMode.NETWORK_PUT_CACHE else CacheMode.READ_CACHE_NETWORK_PUT
-//        return netWork.getBannerData(cacheModel)
-//    }
-//
-//    fun getHomeList(page: Int, refresh: Boolean = false): Flow<BaseResult<HomeListBean>> {
-//        val cacheModel =
-//            if (refresh) CacheMode.NETWORK_PUT_CACHE else CacheMode.READ_CACHE_NETWORK_PUT
-//        return netWork.getHomeList(page, cacheModel)
-//    }
+    fun getBannerData(refresh: Boolean): Flow<BaseResult<List<BannerBean>>> {
+        val cacheModel ="READ_CACHE_NETWORK_PUT";
+        return netWork.getBannerData(cacheModel)
+    }
+
+    fun getHomeList(page: Int, refresh: Boolean = false): Flow<BaseResult<HomeListBean>> {
+        val cacheModel = "READ_CACHE_NETWORK_PUT"
+        return netWork.getHomeList(page, cacheModel)
+    }
 
     suspend fun getNaviJson() = netWork.getNaviJson()
 

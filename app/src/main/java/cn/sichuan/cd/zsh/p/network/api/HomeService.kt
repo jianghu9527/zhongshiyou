@@ -20,6 +20,7 @@ interface HomeService {
      */
     @GET("banner/json")
     fun getBanner(
+        @Header("Cache-Control") cacheModel: String
     ): Flow<BaseResult<List<BannerBean>>>
 
 
@@ -37,6 +38,7 @@ interface HomeService {
     @GET("article/listproject/{page}/json")
     fun getHomeList(
         @Path("page") page: Int,
+        @Header("Cache-Control") cacheModel: String
     ): Flow<BaseResult<HomeListBean>>
 
 

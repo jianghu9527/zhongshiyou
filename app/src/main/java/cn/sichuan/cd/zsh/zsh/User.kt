@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.a
+package cn.sichuan.cd.zsh.zsh
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.a
+package cn.sichuan.cd.zsh.zsh
 import android.os.Bundle
 import android.widget.Toast
 import androidx.activity.viewModels

@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.a
+package cn.sichuan.cd.zsh.zsh
 import androidx.lifecycle.LiveData
 import androidx.room.Dao
 import androidx.room.Insert
