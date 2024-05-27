@@ -11,6 +11,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import cn.sichuan.cd.zsh.R
 import cn.sichuan.cd.zsh.databinding.ActivityVLoginBinding
+import cn.sichuan.cd.zsh.zsh.LogMangeUtil
 
 
 // LoginActivity.kt
@@ -36,15 +37,15 @@ class LoginsActivity : AppCompatActivity() {
 
 
 //        binding.userinformation=muserinfor;
-        Log.d("-------------LoginsActivity-----------","----------name-------------${muserinfor.name.get()}");
-        Log.d("-------------LoginsActivity-----------","----------pwd--------------${muserinfor.pwd.get()}");
+        LogMangeUtil.d("-------------LoginsActivity-----------","----------name-------------${muserinfor.name.get()}");
+        LogMangeUtil.d("-------------LoginsActivity-----------","----------pwd--------------${muserinfor.pwd.get()}");
 
 //      Handler().postDelayed(Runnable {
 //
 ////          muserinfor.name.set("赵四");
 ////          muserinfor.pwd.set("321");
-//          Log.d("-------------LoginsActivity-----------","----Handler------name---------${muserinfor.name.get()}-----");
-//          Log.d("-------------LoginsActivity-----------","-----Handler-----pwd---------${muserinfor.pwd.get()}-----");
+//          LogMangeUtil.d("-------------LoginsActivity-----------","----Handler------name---------${muserinfor.name.get()}-----");
+//          LogMangeUtil.d("-------------LoginsActivity-----------","-----Handler-----pwd---------${muserinfor.pwd.get()}-----");
 //
 //      },20000);
 
@@ -56,8 +57,8 @@ class LoginsActivity : AppCompatActivity() {
                 // 登录成功的逻辑处理
                 Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
 
-                Log.d("--------------------------","--------------loginStatus-----1-------password："+viewModel.password.value);
-                Log.d("--------------------------","--------------loginStatus-----2-------username："+viewModel.username.value);
+                LogMangeUtil.d("--------------------------","--------------loginStatus-----1-------password："+viewModel.password.value);
+                LogMangeUtil.d("--------------------------","--------------loginStatus-----2-------username："+viewModel.username.value);
             } else {
                 // 登录失败的逻辑处理
                 Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT).show()
@@ -68,9 +69,9 @@ class LoginsActivity : AppCompatActivity() {
         viewModel.mUserData.observe(this,Observer{
             mUserData->
             if (mUserData!=null&&mUserData.size>0){
-                Log.d("--------------------------","--------------loginStatus----mUserData------mUserData："+mUserData.size);
+                LogMangeUtil.d("--------------------------","--------------loginStatus----mUserData------mUserData："+mUserData.size);
             }else{
-                Log.d("--------------------------","--------------00000000000----mUserData------：");
+                LogMangeUtil.d("--------------------------","--------------00000000000----mUserData------：");
             }
 
         })
@@ -78,9 +79,9 @@ class LoginsActivity : AppCompatActivity() {
 
 
         binding.videoPlayer.setOnClickListener {
-            Log.d("--------------------------","--------------录制视频------------");
-            val intent = Intent(this, VideoActivity::class.java)
-            startActivity(intent)
+            LogMangeUtil.d("--------------------------","--------------录制视频------------");
+//            val intent = Intent(this, VideoActivity::class.java)
+//            startActivity(intent)
 
 
         }

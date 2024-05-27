@@ -60,8 +60,8 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
             val users = userDao.getAnyUser();
             _Usersaved.postValue(users)
 
-            Log.d("----------------","--------2----username----"+users?.username);
-            Log.d("----------------","--------2------password--"+users?.password);
+            LogMangeUtil.d("----------------","--------2----username----"+users?.username);
+            LogMangeUtil.d("----------------","--------2------password--"+users?.password);
         }
     }
 

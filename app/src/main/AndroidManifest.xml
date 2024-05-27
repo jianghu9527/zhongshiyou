@@ -4,20 +4,37 @@
     package="cn.sichuan.cd.zsh"
     >
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+<!--    <uses-feature-->
+<!--        android:name="android.hardware.camera"-->
+<!--        android:required="false" />-->
 
+<!--    <uses-permission android:name="android.permission.INTERNET"/>-->
+<!--    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+
+<!--    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />-->
+
+<!--&lt;!&ndash;    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />&ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.RECORD_AUDIO"/>-->
+<!--    <uses-permission android:name="android.permission.CAMERA"/>-->
+<!--    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>-->
+<!--    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>-->
+<!--    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />-->
+<!--    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />-->
+<!--&lt;!&ndash;    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />&ndash;&gt;-->
+
+
+<!--    &lt;!&ndash; 适用于Android 11及更高版本的权限 &ndash;&gt;-->
+<!--    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
-        android:maxSdkVersion="32"
-       />
-
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
-        android:maxSdkVersion="32" />
-    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
-    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"
-        tools:ignore="ScopedStorage" />
-
-
+        />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:name=".zsh.MyApplication"
@@ -31,6 +48,7 @@
         android:theme="@style/Theme.cdcj"
         android:usesCleartextTraffic="true"
         android:requestLegacyExternalStorage="true"
+        android:installLocation="preferExternal"
         tools:targetApi="31">
 
 <!--        android:name=".mvvm.LoginsActivity"-->

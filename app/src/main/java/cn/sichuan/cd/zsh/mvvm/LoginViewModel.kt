@@ -10,6 +10,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
+import cn.sichuan.cd.zsh.zsh.LogMangeUtil
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow
@@ -44,15 +45,15 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
                 saveUser() // 登录成功后保存用户数据
             }
 
-                Log.d("----------login---------------", "-----password-----------"+username.value);
-                Log.d("----------login---------------", "------password----------"+password.value);
+                LogMangeUtil.d("----------login---------------", "-----password-----------"+username.value);
+                LogMangeUtil.d("----------login---------------", "------password----------"+password.value);
             repository.deleteAllUsers();
             var   muser= User(username.value.toString(), password.value.toString());
             repository.insert(muser);
             Toast.makeText(getApplication(), "账号保存成功", Toast.LENGTH_SHORT).show();
 
-            Log.d("----------login---------------","--------login------loginStatus-----1-------"+username .value.toString());
-            Log.d("----------login---------------","--------login------loginStatus-----2-------"+password.value.toString());
+            LogMangeUtil.d("----------login---------------","--------login------loginStatus-----1-------"+username .value.toString());
+            LogMangeUtil.d("----------login---------------","--------login------loginStatus-----2-------"+password.value.toString());
 
 
         }
@@ -63,8 +64,8 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
             val user =  User(username.value ?: "", password.value ?: "")
             repository.insert(user)
 
-            Log.d("----------saveUser---------------","----saveUser----------loginStatus-----1-------"+user.password );
-            Log.d("----------saveUser---------------","-----saveUser---------loginStatus-----2-------"+user.username );
+            LogMangeUtil.d("----------saveUser---------------","----saveUser----------loginStatus-----1-------"+user.password );
+            LogMangeUtil.d("----------saveUser---------------","-----saveUser---------loginStatus-----2-------"+user.username );
 
 
         }
@@ -74,13 +75,13 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
         viewModelScope.launch {
             val user =   repository.getUserNamePassWord();
             if (user != null) {
-                Log.d("----------loadUser---------------","----loadUser----------loginStatus-----2-------"+user.username );
-                Log.d("----------loadUser---------------","----loadUser----------loginStatus-----1-------"+user.password );
+                LogMangeUtil.d("----------loadUser---------------","----loadUser----------loginStatus-----2-------"+user.username );
+                LogMangeUtil.d("----------loadUser---------------","----loadUser----------loginStatus-----1-------"+user.password );
 
                 this@LoginViewModel.username.value = user.username
                 this@LoginViewModel.password.value = user.password
 
-                Log.d("-------------------------------------","-----------loadUser----------------界面绑定----------");
+                LogMangeUtil.d("-------------------------------------","-----------loadUser----------------界面绑定----------");
             }
         }
     }
@@ -109,7 +110,7 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
         }
         override fun onTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
             Userinfor.name.set( charSequence.toString())  ;
-            Log.d("---------LoginViewModel---------","----------nameInputListener-------------------------${Userinfor.name}");
+            LogMangeUtil.d("---------LoginViewModel---------","----------nameInputListener-------------------------${Userinfor.name}");
         }
         override fun afterTextChanged(editable: Editable) {
 
@@ -123,7 +124,7 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
         override fun onTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
             Userinfor.pwd.set( charSequence.toString())  ;
 
-            Log.d("---------LoginViewModel---------","----------pwdInputListener-------------------------${Userinfor.pwd}");
+            LogMangeUtil.d("---------LoginViewModel---------","----------pwdInputListener-------------------------${Userinfor.pwd}");
 
         }
         override fun afterTextChanged(editable: Editable) {
