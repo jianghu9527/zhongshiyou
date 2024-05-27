@@ -1,10 +1,4 @@
-package cn.sichuan.cd.zsh.p.me
-
-
-import cn.sichuan.cd.zsh.R
-import cn.sichuan.cd.zsh.databinding.ItemUsedwebBinding
-import com.chad.library.adapter4.BaseQuickAdapter
-import com.pcl.mvvm.network.entity.UsedWeb
+package cn.sichuan.cd.zsh.ui.me
 
 
 //class MeWebAdapter :

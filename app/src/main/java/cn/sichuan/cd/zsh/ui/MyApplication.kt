@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.p
+package cn.sichuan.cd.zsh.ui
 
 import cn.sichuan.cd.zsh.BuildConfig
 import cn.sichuan.cd.zsh.model.base.BaseApplication

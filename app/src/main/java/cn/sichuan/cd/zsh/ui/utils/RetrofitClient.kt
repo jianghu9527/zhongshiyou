@@ -1,9 +1,8 @@
-package cn.sichuan.cd.zsh.p.utils
+package cn.sichuan.cd.zsh.ui.utils
 
 
 import cn.sichuan.cd.zsh.model.adapter.FlowAdapterFactory
-import cn.sichuan.cd.zsh.p.common.Constant.BASE_URL
-import com.blankj.utilcode.util.Utils
+import cn.sichuan.cd.zsh.ui.common.Constant.BASE_URL
 import okhttp3.ConnectionPool
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

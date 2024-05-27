@@ -104,8 +104,16 @@ dependencies {
     implementation 'com.squareup.retrofit2:converter-gson:2.11.0'
     implementation 'com.squareup.retrofit2:retrofit:2.11.0'
     implementation 'com.squareup.okhttp3:logging-interceptor:4.9.3'
-    implementation "io.github.cymchad:BaseRecyclerViewAdapterHelper4:4.1.4"
+//    implementation "io.github.cymchad:BaseRecyclerViewAdapterHelper4:4.1.4"
+    implementation "io.github.cymchad:BaseRecyclerViewAdapterHelper:3.0.14"
+
 
     implementation("io.coil-kt:coil:2.6.0")
     implementation 'io.github.youth5201314:banner:2.2.2'
+
+//    implementation "com.github.getActivity:XXPermissions:18.63"
+//    implementation "com.github.getActivity:XXPermissions:18.6"
+    implementation "com.github.getActivity:XXPermissions:13.2"
+
+
 }

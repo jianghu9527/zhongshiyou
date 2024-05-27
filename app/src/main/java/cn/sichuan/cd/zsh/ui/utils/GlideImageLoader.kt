@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.p.utils
+package cn.sichuan.cd.zsh.ui.utils
 
 import coil.load
 import com.pcl.mvvm.network.entity.BannerBean

@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.p.http
+package cn.sichuan.cd.zsh.ui.http
 
 //import com.aleyn.cache.CacheMode
 //import com.aleyn.mvvm.base.BaseModel

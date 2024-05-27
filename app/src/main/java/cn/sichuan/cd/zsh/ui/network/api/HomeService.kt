@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.p.network.api
+package cn.sichuan.cd.zsh.ui.network.api
 
 //import com.aleyn.cache.CacheStrategy
 import cn.sichuan.cd.zsh.model.app.base.BaseResult

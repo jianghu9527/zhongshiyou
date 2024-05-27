@@ -1,14 +1,13 @@
-package cn.sichuan.cd.zsh.p.me
+package cn.sichuan.cd.zsh.ui.me
 
 
 import cn.sichuan.cd.zsh.model.base.BaseViewModel
 import cn.sichuan.cd.zsh.model.extend.getOrThrow
-import cn.sichuan.cd.zsh.p.utils.InjectorUtil
+import cn.sichuan.cd.zsh.ui.utils.InjectorUtil
 import com.pcl.mvvm.network.entity.UsedWeb
 
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow
-import kotlinx.coroutines.flow.map
 
 /**
  *   @auther : Aleyn

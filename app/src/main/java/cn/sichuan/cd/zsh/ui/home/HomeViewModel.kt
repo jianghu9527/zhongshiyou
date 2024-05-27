@@ -1,12 +1,11 @@
-package cn.sichuan.cd.zsh.p.home
+package cn.sichuan.cd.zsh.ui.home
 
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
 import cn.sichuan.cd.zsh.model.base.BaseViewModel
 import cn.sichuan.cd.zsh.model.event.SingleLiveEvent
 import cn.sichuan.cd.zsh.model.extend.asResponse
 import cn.sichuan.cd.zsh.model.extend.bindLoading
-import cn.sichuan.cd.zsh.p.utils.InjectorUtil
+import cn.sichuan.cd.zsh.ui.utils.InjectorUtil
 import com.pcl.mvvm.network.entity.BannerBean
 import com.pcl.mvvm.network.entity.HomeListBean
 //import com.aleyn.mvvm.base.BaseViewModel

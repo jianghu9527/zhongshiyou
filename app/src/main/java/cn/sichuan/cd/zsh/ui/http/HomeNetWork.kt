@@ -1,7 +1,7 @@
-package cn.sichuan.cd.zsh.p.http
+package cn.sichuan.cd.zsh.ui.http
 
-import cn.sichuan.cd.zsh.p.network.api.HomeService
-import cn.sichuan.cd.zsh.p.utils.RetrofitClient
+import cn.sichuan.cd.zsh.ui.network.api.HomeService
+import cn.sichuan.cd.zsh.ui.utils.RetrofitClient
 
 
 /**

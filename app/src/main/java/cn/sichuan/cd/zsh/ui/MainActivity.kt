@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.p
+package cn.sichuan.cd.zsh.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,8 +10,8 @@ import cn.sichuan.cd.zsh.model.base.NoViewModel
 import com.blankj.utilcode.util.BarUtils
 import com.blankj.utilcode.util.ColorUtils
 import com.blankj.utilcode.util.PermissionUtils
-import cn.sichuan.cd.zsh.p.home.HomeFragment
-import cn.sichuan.cd.zsh.p.me.MeFragment
+import cn.sichuan.cd.zsh.ui.home.HomeFragment
+import cn.sichuan.cd.zsh.ui.me.MeFragment
 
 //import com.pcl.mvvm.R
 //import com.pcl.mvvm.databinding.ActivityMainBinding
