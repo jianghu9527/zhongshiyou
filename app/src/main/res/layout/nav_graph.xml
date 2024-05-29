@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/text_hosme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home Fragment"
+        android:layout_centerInParent="true"
+        android:textSize="18sp"/>
+</RelativeLayout>
+
+
+<!--<navigation-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    app:startDestination="@id/nav_home">-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_home"-->
+<!--        android:name="cn.sichuan.cd.zsh.fragment.HomeFragment"-->
+<!--        android:label="Home"-->
+<!--        tools:layout="@layout/fragment_home" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_dashboard"-->
+<!--        android:name="cn.sichuan.cd.zsh.fragment.DashboardFragment"-->
+<!--        android:label="Dashboard"-->
+<!--        tools:layout="@layout/fragment_dashboard" />-->
+
+<!--    <fragment-->
+<!--        android:id="@+id/nav_notifications"-->
+<!--        android:name="cn.sichuan.cd.zsh.fragment.NotificationsFragment"-->
+<!--        android:label="Notifications"-->
+<!--        tools:layout="@layout/fragment_notifications" />-->
+
+<!--</com.google.android.material.navigation.NavigationViewavigation>-->
