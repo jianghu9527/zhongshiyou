@@ -9,7 +9,7 @@ import com.chad.library.adapter.base.viewholder.BaseViewHolder
 
 //import com.chad.library.adapter4.BaseQuickAdapter
 
-import com.pcl.mvvm.network.entity.ArticlesBean
+import com.efficient.production.app.ui.network.entity.ArticlesBean
 
 
 class HomeListAdapter : BaseQuickAdapter<ArticlesBean, BaseViewHolder>(R.layout.item_article_list),

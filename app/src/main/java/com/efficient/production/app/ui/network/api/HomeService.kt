@@ -1,11 +1,11 @@
 package com.efficient.production.app.ui.network.api
 
-//import com.aleyn.cache.CacheStrategy
+//import com.ck.cache.CacheStrategy
 import com.efficient.production.app.model.app.base.BaseResult
-import com.pcl.mvvm.network.entity.BannerBean
-import com.pcl.mvvm.network.entity.HomeListBean
-import com.pcl.mvvm.network.entity.NavTypeBean
-import com.pcl.mvvm.network.entity.UsedWeb
+import com.efficient.production.app.ui.network.entity.BannerBean
+import com.efficient.production.app.ui.network.HomeListBean
+import com.efficient.production.app.ui.network.NavTypeBean
+import com.efficient.production.app.ui.network.UsedWeb
 import kotlinx.coroutines.flow.Flow
 import retrofit2.http.GET
 import retrofit2.http.Header

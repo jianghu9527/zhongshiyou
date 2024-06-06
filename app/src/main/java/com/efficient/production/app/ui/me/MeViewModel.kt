@@ -4,13 +4,13 @@ package com.efficient.production.app.ui.me
 import com.efficient.production.app.model.app.base.BaseViewModel
 import com.efficient.production.app.model.extend.getOrThrow
 import com.efficient.production.app.ui.utils.InjectorUtil
-import com.pcl.mvvm.network.entity.UsedWeb
+import com.efficient.production.app.ui.network.UsedWeb
 
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow
 
 /**
- *   @auther : Aleyn
+ *   @auther : ck
  *   time   : 2019/11/14
  */
 class MeViewModel : BaseViewModel() {

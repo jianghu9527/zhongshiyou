@@ -4,7 +4,7 @@ import com.efficient.production.app.model.app.base.IBaseResponse
 
 
 /**
- *   @author : Aleyn
+ *   @author : ck
  *   time   : 2019/08/12
  */
 open class ResponseThrowable : Exception {

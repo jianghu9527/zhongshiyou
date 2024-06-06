@@ -7,7 +7,7 @@ import com.efficient.production.app.model.app.extend.flowLaunch
 import java.lang.reflect.ParameterizedType
 
 /**
- * @author : Aleyn
+ * @author : ck
  * @date : 2022/07/31 : 23:05
  */
 abstract class BaseVMActivity<VM : BaseViewModel, VB : ViewBinding> : BaseActivity<VB>() {

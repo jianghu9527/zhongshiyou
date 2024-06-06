@@ -1,17 +1,14 @@
 package com.efficient.production.app.ui.http
 
-//import com.aleyn.cache.CacheMode
-//import com.aleyn.mvvm.base.BaseModel
-//import com.pcl.mvvm.app.base.BaseResult
-//import com.pcl.mvvm.data.http.HomeNetWork
+ 
 import com.efficient.production.app.model.app.base.BaseModel
 import com.efficient.production.app.model.app.base.BaseResult
-import com.pcl.mvvm.network.entity.BannerBean
-import com.pcl.mvvm.network.entity.HomeListBean
+import com.efficient.production.app.ui.network.entity.BannerBean
+import com.efficient.production.app.ui.network.HomeListBean
 import kotlinx.coroutines.flow.Flow
 
 /**
- *   @author : Aleyn
+ *   @author : ck
  *   time   : 2019/10/29
  */
 class HomeRepository private constructor(

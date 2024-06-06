@@ -1,7 +1,7 @@
-package com.pcl.mvvm.network.entity
+package com.efficient.production.app.ui.network.entity
 
 /**
- *   @author : Aleyn
+ *   @author : ck
  *   time   : 2019/11/01
  */
 

@@ -5,7 +5,7 @@
 
         <variable
                 name="itemBean"
-                type="com.pcl.mvvm.network.entity.ArticlesBean" />
+                type="com.efficient.production.app.ui.network.entity.ArticlesBean" />
 
         <variable
                 name="listenner"

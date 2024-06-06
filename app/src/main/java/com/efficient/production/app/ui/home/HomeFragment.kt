@@ -12,8 +12,8 @@ import com.efficient.production.app.databinding.HomeFragmentBinding
 import com.efficient.production.app.model.app.base.BaseVMFragment
 
 import com.efficient.production.app.ui.utils.GlideImageLoader
-import com.pcl.mvvm.network.entity.ArticlesBean
-import com.pcl.mvvm.network.entity.BannerBean
+import com.efficient.production.app.ui.network.entity.ArticlesBean
+import com.efficient.production.app.ui.network.entity.BannerBean
 import com.efficient.production.app.ui.detail.DetailActivity
 import com.youth.banner.Banner
 import com.efficient.production.app.R

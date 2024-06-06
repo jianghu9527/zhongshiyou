@@ -1,7 +1,7 @@
 package com.efficient.production.app.ui.utils
 
 import coil.load
-import com.pcl.mvvm.network.entity.BannerBean
+import com.efficient.production.app.ui.network.entity.BannerBean
 import com.youth.banner.adapter.BannerImageAdapter
 import com.youth.banner.holder.BannerImageHolder
 

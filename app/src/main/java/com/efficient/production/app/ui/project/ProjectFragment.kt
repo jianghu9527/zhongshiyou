@@ -9,7 +9,7 @@ import com.efficient.production.app.model.event.Message
 import com.efficient.production.app.ui.detail.DetailActivity
 import com.efficient.production.app.ui.project.ProjectViewModel
 
-import com.pcl.mvvm.network.entity.ArticlesBean
+import com.efficient.production.app.ui.network.entity.ArticlesBean
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
 

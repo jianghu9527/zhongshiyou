@@ -11,7 +11,7 @@ import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.MutableSharedFlow
 
 /**
- *   @author : Aleyn
+ *   @author : ck
  *   time   : 2019/11/01
  */
 open class BaseViewModel : ViewModel(), IViewModel, DefaultLifecycleObserver {

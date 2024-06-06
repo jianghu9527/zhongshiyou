@@ -8,14 +8,14 @@ import com.efficient.production.app.model.extend.getOrThrow
 import com.efficient.production.app.ui.utils.InjectorUtil
 import com.google.android.material.tabs.TabLayout
 
-import com.pcl.mvvm.network.entity.ArticlesBean
-import com.pcl.mvvm.network.entity.NavTypeBean
+import com.efficient.production.app.ui.network.entity.ArticlesBean
+import com.efficient.production.app.ui.network.NavTypeBean
 import me.tatarka.bindingcollectionadapter2.ItemBinding
 import com.efficient.production.app.R
 import com.efficient.production.app.BR
 
 /**
- *   @author : Aleyn
+ *   @author : ck
  *   time   : 2019/11/12
  */
 class ProjectViewModel : BaseViewModel() {

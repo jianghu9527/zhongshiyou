@@ -11,7 +11,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
 /**
- *   @auther : Aleyn
+ *   @auther : ck
  *   time   : 2019/09/04
  */
 class RetrofitClient {

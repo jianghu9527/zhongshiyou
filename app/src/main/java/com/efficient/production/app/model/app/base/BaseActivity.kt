@@ -15,7 +15,7 @@ import com.afollestad.materialdialogs.lifecycle.lifecycleOwner
 import java.lang.reflect.ParameterizedType
 
 /**
- *   @author : Aleyn
+ *   @author : ck
  *   time   : 2019/11/01
  */
 abstract class BaseActivity<DB : ViewBinding> : AppCompatActivity() {

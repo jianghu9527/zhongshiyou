@@ -1,7 +1,7 @@
 package com.efficient.production.app.model.app.base
 
 /**
- *   @author : Aleyn
+ *   @author : ck
  *   time   : 2020/01/13
  */
 interface IBaseResponse<T> {

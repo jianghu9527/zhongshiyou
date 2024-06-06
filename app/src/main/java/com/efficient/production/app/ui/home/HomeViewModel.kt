@@ -6,16 +6,9 @@ import com.efficient.production.app.model.event.SingleLiveEvent
 import com.efficient.production.app.model.extend.asResponse
 import com.efficient.production.app.model.extend.bindLoading
 import com.efficient.production.app.ui.utils.InjectorUtil
-import com.pcl.mvvm.network.entity.BannerBean
-import com.pcl.mvvm.network.entity.HomeListBean
-//import com.aleyn.mvvm.base.BaseViewModel
-//import com.aleyn.mvvm.event.SingleLiveEvent
-//import com.aleyn.mvvm.extend.asResponse
-//import com.aleyn.mvvm.extend.bindLoading
-//import com.aleyn.mvvm.extend.getOrThrow
-//import com.pcl.mvvm.network.entity.BannerBean
-//import com.pcl.mvvm.network.entity.HomeListBean
-//import com.pcl.mvvm.utils.InjectorUtil
+import com.efficient.production.app.ui.network.entity.BannerBean
+import com.efficient.production.app.ui.network.HomeListBean
+
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow
 import kotlinx.coroutines.flow.onCompletion
