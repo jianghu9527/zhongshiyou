@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/flt_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_test1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test1" />
+
+            <Button
+                android:id="@+id/btn_test2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Test2" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/btn_online1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在线地图1" />
+
+            <Button
+                android:id="@+id/btn_online2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="在线地图2" />
+
+            <Button
+                android:id="@+id/btn_offline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="离线地图" />
+
+            <Button
+                android:id="@+id/btn_animate_to"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="跳转" />
+
+            <Button
+                android:id="@+id/btn_locate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="定位" />
+
+            <Button
+                android:id="@+id/btn_add_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加点" />
+
+            <Button
+                android:id="@+id/btn_add_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加线" />
+
+            <Button
+                android:id="@+id/btn_add_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加圆" />
+
+            <Button
+                android:id="@+id/btn_add_ellipse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="添加椭圆" />
+
+            <Button
+                android:id="@+id/btn_draw_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手画点" />
+
+            <Button
+                android:id="@+id/btn_draw_line"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手画线" />
+
+            <Button
+                android:id="@+id/btn_draw_plane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手画面" />
+
+            <Button
+                android:id="@+id/btn_draw_revocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手绘撤销" />
+
+            <Button
+                android:id="@+id/btn_load_kml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="加载KML" />
+
+            <Button
+                android:id="@+id/btn_length"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="计算长度" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</FrameLayout>
