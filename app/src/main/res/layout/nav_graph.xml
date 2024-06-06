@@ -22,19 +22,19 @@
 
 <!--    <fragment-->
 <!--        android:id="@+id/nav_home"-->
-<!--        android:name="cn.sichuan.cd.zsh.fragment.HomeFragment"-->
+<!--        android:name="com.efficient.production.app.fragment.HomeFragment"-->
 <!--        android:label="Home"-->
 <!--        tools:layout="@layout/fragment_home" />-->
 
 <!--    <fragment-->
 <!--        android:id="@+id/nav_dashboard"-->
-<!--        android:name="cn.sichuan.cd.zsh.fragment.DashboardFragment"-->
+<!--        android:name="com.efficient.production.app.fragment.DashboardFragment"-->
 <!--        android:label="Dashboard"-->
 <!--        tools:layout="@layout/fragment_dashboard" />-->
 
 <!--    <fragment-->
 <!--        android:id="@+id/nav_notifications"-->
-<!--        android:name="cn.sichuan.cd.zsh.fragment.NotificationsFragment"-->
+<!--        android:name="com.efficient.production.app.fragment.NotificationsFragment"-->
 <!--        android:label="Notifications"-->
 <!--        tools:layout="@layout/fragment_notifications" />-->
 

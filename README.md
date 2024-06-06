@@ -10,3 +10,6 @@ v1.0.1
 
 v1.0.2
 新加入fragment模块
+
+cn.sichuan.cd.zsh
+com.efficient.production.app

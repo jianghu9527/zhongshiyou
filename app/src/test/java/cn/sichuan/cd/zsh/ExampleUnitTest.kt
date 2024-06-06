@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh
+package com.efficient.production.app
 
 import org.junit.Test
 

@@ -8,21 +8,21 @@ plugins {
 }
 
 android {
-    namespace 'cn.sichuan.cd.zsh'
+    namespace 'com.efficient.production.app'
     compileSdk 34
 
     defaultConfig {
-        applicationId "cn.sichuan.cd.zsh"
+        applicationId "com.efficient.production.app"
         minSdk 24
         targetSdk 34
-        versionCode 102
-        versionName "1.0.2"
+        versionCode 103
+        versionName "1.0.3"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
         multiDexEnabled true
         ndk {
-            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", 'x86_64', 'x86'
+            abiFilters 'arm64-v8a'
         }
     }
 
@@ -35,6 +35,25 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    dexOptions {
+        javaMaxHeapSize "2g"
+    }
+
+    packagingOptions {
+        pickFirst '**/libc++_shared.so'
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
     }
 
 
@@ -116,6 +135,20 @@ dependencies {
 //    implementation 'com.blankj:utilcodex:1.31.1'
     implementation 'com.blankj:utilcodex:1.31.1'
 //    implementation 'com.blankj:utilcode:1.13.5'
+    //bigemap
+    implementation files('libs/lib-bmcore.aar')
+    implementation files('libs/commons-lang3-3.12.0.jar')
+    implementation files('libs/zip4j_1.3.1.jar')
+    implementation files('libs/commons-jexl-2.1.1.jar')
+    implementation files('libs/spring-core-4.3.6.RELEASE.jar')
+
+
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation('me.tatarka.bindingcollectionadapter2:bindingcollectionadapter:4.0.0')
+    implementation('me.tatarka.bindingcollectionadapter2:bindingcollectionadapter-recyclerview:4.0.0')
+    implementation('org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.1')
+    implementation('androidx.lifecycle:lifecycle-runtime-ktx:2.6.1')
+
 
 
 }
