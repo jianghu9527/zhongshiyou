@@ -5,13 +5,13 @@
     <data>
         <variable
             name="viewModel"
-            type="com.efficient.production.app.zsh.LoginViewModel" />
+            type="cn.sichuan.cd.zsh.zsh.LoginViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.efficient.production.app.zsh.LoginActivity">
+        tools:context="cn.sichuan.cd.zsh.zsh.LoginActivity">
 
         <EditText
             android:id="@+id/usernameEditText"

@@ -8,15 +8,15 @@ plugins {
 }
 
 android {
-    namespace 'com.efficient.production.app'
+    namespace 'cn.sichuan.cd.zsh'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.efficient.production.app"
+        applicationId "cn.sichuan.cd.zsh"
         minSdk 24
         targetSdk 34
-        versionCode 103
-        versionName "1.0.3"
+        versionCode 104
+        versionName "1.0.4"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
