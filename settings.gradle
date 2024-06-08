@@ -1,5 +1,5 @@
 
-rootProject.name = "zsh(中石化)"
+rootProject.name = "zsh(面试题)"
 include ':app'
 
 dependencyResolutionManagement {
