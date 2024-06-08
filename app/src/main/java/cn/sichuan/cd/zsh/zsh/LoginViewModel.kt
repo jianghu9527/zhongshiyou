@@ -10,7 +10,7 @@ import kotlinx.coroutines.launch
 
 class LoginViewModel(application: Application) : AndroidViewModel(application) {
 
-    private val userDao = AppDatabase.getDatabase(application).userDao()
+//    private val userDao = AppDatabase.getDatabase(application).userDao()
 
     private val _loginResult = MutableLiveData<Boolean>()
     val loginResult: LiveData<Boolean> get() = _loginResult
@@ -26,8 +26,8 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
 
     private fun fetchSavedUser() {
         viewModelScope.launch {
-            val user = userDao.getAnyUser()
-            _savedUser.postValue(user)
+//            val user = userDao.getAnyUser()
+//            _savedUser.postValue(user)
         }
     }
 
@@ -44,9 +44,9 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
                 return@launch;
             }
 
-            userDao.deleteAllUsers();
-            var   muser=   User(username,password,false);
-            userDao.insert(muser);
+//            userDao.deleteAllUsers();
+//            var   muser=   User(username,password,false);
+//            userDao.insert(muser);
             Toast.makeText(getApplication(), "账号保存成功", Toast.LENGTH_SHORT).show();
         }
 
@@ -56,11 +56,11 @@ class LoginViewModel(application: Application) : AndroidViewModel(application) {
     fun getUser() {
         viewModelScope.launch {
 
-            val users = userDao.getAnyUser();
-            _Usersaved.postValue(users)
-
-            LogMangeUtil.d("----------------", "--------2----username----" + users?.username);
-            LogMangeUtil.d("----------------", "--------2------password--" + users?.password);
+//            val users = userDao.getAnyUser();
+//            _Usersaved.postValue(users)
+//
+//            LogMangeUtil.d("----------------", "--------2----username----" + users?.username);
+//            LogMangeUtil.d("----------------", "--------2------password--" + users?.password);
         }
     }
 

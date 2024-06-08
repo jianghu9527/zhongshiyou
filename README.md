@@ -21,6 +21,8 @@ com.efficient.cd.production.app
 V1.0.4
 部分kotlin代码忘记上传了
 
+.zsh.LoginActivity  数据的双向绑定
+mvvm.LoginsActivity  面试 项目结构mvvm  databinding
 
 
 

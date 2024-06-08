@@ -132,7 +132,9 @@ public class LogMangeUtil {
 
 
     public  static void SendInforLog(String msginfor){
-        Log.e("--------","--------写入库文件-------mecp------table:"+msginfor);
+
+        Log.e("--------","-----"+msginfor);
+//        Log.e("--------","--------写入库文件-------mecp------table:"+msginfor);
 
 //        if (msginfor != null&& !TextUtils.isEmpty(msginfor)) {
 //            LogMangeUtil.d("---------------", "--------写入结果------run-------"+msginfor);
