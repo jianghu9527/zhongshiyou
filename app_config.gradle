@@ -1,0 +1,40 @@
+
+
+ext {
+
+  //是否是发布模式
+    isRelease=false   //true
+
+
+    username="zsh_ck";
+
+    compileSdk_app =34
+    minSdk_app = 24
+    targetSdk_app = 34
+    versionCode_app = 105
+    versionName_app = "1.0.5"
+
+    kotlinVersion = "1.9.0" // 更新到 1.9.0
+
+
+    retrofitVersion = "2.9.0"
+    okhttpVersion = "4.10.0"
+
+    Retrofit = [
+            retrofit: "com.squareup.retrofit2:retrofit:${retrofitVersion}",
+            converterGson: "com.squareup.retrofit2:converter-gson:${retrofitVersion}",
+            okhttpLogging: "com.squareup.okhttp3:logging-interceptor:${okhttpVersion}",
+            okhttp3: "com.squareup.okhttp3:okhttp:${okhttpVersion}"
+    ]
+
+    RetrofitValues = Retrofit.values()
+
+}
+
+
+println "Retrofit dependencies:  app_config.gradle"
+Retrofit.each { key, value ->
+    println "${key}: ${value}"
+}
+
+

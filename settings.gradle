@@ -1,9 +1,13 @@
-
-rootProject.name = "zsh(面试题)"
-include ':app'
+rootProject.name = "zsh(Interview)"
+include ':app',':Common'
 
 dependencyResolutionManagement {
     repositories {
         maven { url 'https://jitpack.io' }
     }
 }
+
+include ':order'
+include ':persion'
+
+println("root project  ==>> setting.gradle")

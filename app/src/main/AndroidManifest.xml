@@ -42,8 +42,9 @@
 <!--        android:name=".fragment.MainFragment"-->
 
 
+
         <activity
-            android:name=".zsh.LoginActivity"
+            android:name=".module.ModuleActivity"
             android:label="@string/app_name"
             android:exported="true">
             <intent-filter>
