@@ -7,6 +7,8 @@ import android.view.View;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.scwang.smart.drawable.paint.BuildConfig;
+
 import cn.sichuan.cd.common.LoginManager;
 import cn.sichuan.cd.common.NetManageUtils;
 import cn.sichuan.cd.order.OrderMainActivity;
@@ -30,7 +32,7 @@ public class ModuleActivity extends AppCompatActivity {
         new NetManageUtils().NetStat(true);
         LoginManager.INSTANCE.login("ck","123456");
 
-        LogMangeUtil.d("-------------------ModuleActivity---------------1111-------");
+        LogMangeUtil.d("-------------------ModuleActivity---------------1111-------"+ BuildConfig.VERSION_NAME);
 
 
 
