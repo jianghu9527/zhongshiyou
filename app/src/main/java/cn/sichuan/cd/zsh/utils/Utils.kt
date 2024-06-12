@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.utils
+package cn.sichuan.cd.zzsy.utils
 
 import android.content.Context
 import android.util.Log

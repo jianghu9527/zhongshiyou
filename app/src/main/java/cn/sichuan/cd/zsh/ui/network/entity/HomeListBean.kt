@@ -1,6 +1,6 @@
-package cn.sichuan.cd.zsh.ui.network
+package cn.sichuan.cd.zzsy.ui.network
 
-import cn.sichuan.cd.zsh.ui.network.entity.ArticlesBean
+import cn.sichuan.cd.zzsy.ui.network.entity.ArticlesBean
 
 /**
  * @author :ck

@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.zsh
+package cn.sichuan.cd.zzsy.zsh
 
 import android.app.Application
 import android.widget.Toast

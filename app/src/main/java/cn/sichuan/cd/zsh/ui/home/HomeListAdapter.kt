@@ -1,7 +1,7 @@
-package cn.sichuan.cd.zsh.ui.home
+package cn.sichuan.cd.zzsy.ui.home
 
 import android.widget.ImageView
-import cn.sichuan.cd.zsh.R
+import cn.sichuan.cd.zzsy.R
 import coil.load
 import com.chad.library.adapter.base.BaseQuickAdapter
 import com.chad.library.adapter.base.module.LoadMoreModule
@@ -9,7 +9,7 @@ import com.chad.library.adapter.base.viewholder.BaseViewHolder
 
 //import com.chad.library.adapter4.BaseQuickAdapter
 
-import cn.sichuan.cd.zsh.ui.network.entity.ArticlesBean
+import cn.sichuan.cd.zzsy.ui.network.entity.ArticlesBean
 
 
 class HomeListAdapter : BaseQuickAdapter<ArticlesBean, BaseViewHolder>(R.layout.item_article_list),

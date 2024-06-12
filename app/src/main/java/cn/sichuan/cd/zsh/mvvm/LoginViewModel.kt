@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.mvvm
+package cn.sichuan.cd.zzsy.mvvm
 
 import android.app.Application
 import android.text.Editable
@@ -8,7 +8,7 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
-import cn.sichuan.cd.zsh.zsh.LogMangeUtil
+import cn.sichuan.cd.zzsy.zsh.LogMangeUtil
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 

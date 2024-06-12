@@ -1,6 +1,6 @@
-package cn.sichuan.cd.zsh.model.network
+package cn.sichuan.cd.zzsy.model.network
 
-import cn.sichuan.cd.zsh.model.app.base.IBaseResponse
+import cn.sichuan.cd.zzsy.model.app.base.IBaseResponse
 
 
 /**

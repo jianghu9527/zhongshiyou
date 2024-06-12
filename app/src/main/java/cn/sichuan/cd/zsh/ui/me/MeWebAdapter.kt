@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.ui.me
+package cn.sichuan.cd.zzsy.ui.me
 
 
 //class MeWebAdapter :

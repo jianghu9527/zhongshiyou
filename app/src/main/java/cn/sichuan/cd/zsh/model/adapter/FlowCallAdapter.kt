@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.model.adapter
+package cn.sichuan.cd.zzsy.model.adapter
 
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow

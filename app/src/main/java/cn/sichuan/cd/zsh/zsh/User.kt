@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.zsh
+package cn.sichuan.cd.zzsy.zsh
 
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable

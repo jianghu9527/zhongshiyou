@@ -6,7 +6,7 @@
 
         <variable
             name="userview"
-            type="cn.sichuan.cd.zsh.zsh.User" />
+            type="cn.sichuan.cd.zzsy.zsh.User" />
 
 
 
@@ -15,7 +15,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="cn.sichuan.cd.zsh.zsh.LoginActivity">
+        tools:context="cn.sichuan.cd.zzsy.zsh.LoginActivity">
 
         <EditText
             android:id="@+id/usernameEditText"

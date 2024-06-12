@@ -8,9 +8,10 @@ buildscript {
         mavenCentral()
         maven { url 'https://jitpack.io' }
     }
-    dependencies {
 
-        classpath('com.android.tools.build:gradle:7.4.0')
+    dependencies {
+//        classpath('com.android.tools.build:gradle:7.4.0')
+        classpath('com.android.tools.build:gradle:8.0.2')
 //        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.10")
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
         classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.5.3")

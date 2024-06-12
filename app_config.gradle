@@ -3,7 +3,7 @@
 ext {
 
   //是否是发布模式
-    isRelease=false   //true
+    isRelease=true   //true
 
 
     username="zsh_ck";

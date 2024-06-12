@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.model.adapter
+package cn.sichuan.cd.zzsy.model.adapter
 
 import kotlinx.coroutines.flow.Flow
 import retrofit2.CallAdapter
@@ -29,13 +29,13 @@ class FlowAdapterFactory private constructor(private val async: Boolean) :
                 "Response must be parameterized as Response<Foo> or Response<? extends Foo>"
             }
             val responseBodyType = getParameterUpperBound(0, flowType)
-            cn.sichuan.cd.zsh.model.adapter.FlowCallAdapter(
+            cn.sichuan.cd.zzsy.model.adapter.FlowCallAdapter(
                 responseBodyType,
                 false,
                 async
             )
         } else {
-            cn.sichuan.cd.zsh.model.adapter.FlowCallAdapter(flowType, true, async)
+            cn.sichuan.cd.zzsy.model.adapter.FlowCallAdapter(flowType, true, async)
         }
 
     }
@@ -43,6 +43,6 @@ class FlowAdapterFactory private constructor(private val async: Boolean) :
     companion object {
         @JvmStatic
         fun create(async: Boolean = false) =
-            cn.sichuan.cd.zsh.model.adapter.FlowAdapterFactory(async)
+            cn.sichuan.cd.zzsy.model.adapter.FlowAdapterFactory(async)
     }
 }

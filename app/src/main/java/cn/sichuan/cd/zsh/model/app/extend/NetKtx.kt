@@ -1,16 +1,16 @@
-package cn.sichuan.cd.zsh.model.app.extend
+package cn.sichuan.cd.zzsy.model.app.extend
 
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import cn.sichuan.cd.zsh.model.app.MVVMLin
-import cn.sichuan.cd.zsh.model.app.base.IBaseResponse
-import cn.sichuan.cd.zsh.model.app.base.IViewModel
-import cn.sichuan.cd.zsh.model.network.ERROR
-import cn.sichuan.cd.zsh.model.network.ExceptionHandle
-import cn.sichuan.cd.zsh.model.network.ResponseThrowable
+import cn.sichuan.cd.zzsy.model.app.MVVMLin
+import cn.sichuan.cd.zzsy.model.app.base.IBaseResponse
+import cn.sichuan.cd.zzsy.model.app.base.IViewModel
+import cn.sichuan.cd.zzsy.model.network.ERROR
+import cn.sichuan.cd.zzsy.model.network.ExceptionHandle
+import cn.sichuan.cd.zzsy.model.network.ResponseThrowable
 
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.CoroutineStart

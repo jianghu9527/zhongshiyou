@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.ui.home
+package cn.sichuan.cd.zzsy.ui.home
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,24 +6,24 @@ import android.view.ViewGroup
 import android.view.ViewGroup.LayoutParams.MATCH_PARENT
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import cn.sichuan.cd.zsh.databinding.HomeFragmentBinding
+import cn.sichuan.cd.zzsy.databinding.HomeFragmentBinding
 
 
-import cn.sichuan.cd.zsh.model.app.base.BaseVMFragment
+import cn.sichuan.cd.zzsy.model.app.base.BaseVMFragment
 
-import cn.sichuan.cd.zsh.ui.utils.GlideImageLoader
-import cn.sichuan.cd.zsh.ui.network.entity.ArticlesBean
-import cn.sichuan.cd.zsh.ui.network.entity.BannerBean
-import cn.sichuan.cd.zsh.ui.detail.DetailActivity
+import cn.sichuan.cd.zzsy.ui.utils.GlideImageLoader
+import cn.sichuan.cd.zzsy.ui.network.entity.ArticlesBean
+import cn.sichuan.cd.zzsy.ui.network.entity.BannerBean
+import cn.sichuan.cd.zzsy.ui.detail.DetailActivity
 import com.youth.banner.Banner
-import cn.sichuan.cd.zsh.R
-import cn.sichuan.cd.zsh.zsh.LogMangeUtil
+import cn.sichuan.cd.zzsy.R
+import cn.sichuan.cd.zzsy.zsh.LogMangeUtil
 import kotlinx.coroutines.launch
 
 
 class HomeFragment : BaseVMFragment<HomeViewModel, HomeFragmentBinding>() {
 
-    private val mAdapter by lazy { cn.sichuan.cd.zsh.ui.home.HomeListAdapter() }
+    private val mAdapter by lazy { cn.sichuan.cd.zzsy.ui.home.HomeListAdapter() }
     private var page: Int = 0
     private lateinit var banner: Banner<BannerBean, GlideImageLoader>
 

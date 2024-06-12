@@ -1,11 +1,11 @@
-package cn.sichuan.cd.zsh.ui.network.api
+package cn.sichuan.cd.zzsy.ui.network.api
 
 //import com.ck.cache.CacheStrategy
-import cn.sichuan.cd.zsh.model.app.base.BaseResult
-import cn.sichuan.cd.zsh.ui.network.entity.BannerBean
-import cn.sichuan.cd.zsh.ui.network.HomeListBean
-import cn.sichuan.cd.zsh.ui.network.NavTypeBean
-import cn.sichuan.cd.zsh.ui.network.UsedWeb
+import cn.sichuan.cd.zzsy.model.app.base.BaseResult
+import cn.sichuan.cd.zzsy.ui.network.entity.BannerBean
+import cn.sichuan.cd.zzsy.ui.network.HomeListBean
+import cn.sichuan.cd.zzsy.ui.network.NavTypeBean
+import cn.sichuan.cd.zzsy.ui.network.UsedWeb
 import kotlinx.coroutines.flow.Flow
 import retrofit2.http.GET
 import retrofit2.http.Header

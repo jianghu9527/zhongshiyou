@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.model.binding
+package cn.sichuan.cd.zzsy.model.binding
 
 import android.widget.ImageView
 import androidx.databinding.BindingAdapter

@@ -1,7 +1,7 @@
-package cn.sichuan.cd.zsh.ui.utils
+package cn.sichuan.cd.zzsy.ui.utils
 
 import coil.load
-import cn.sichuan.cd.zsh.ui.network.entity.BannerBean
+import cn.sichuan.cd.zzsy.ui.network.entity.BannerBean
 import com.youth.banner.adapter.BannerImageAdapter
 import com.youth.banner.holder.BannerImageHolder
 

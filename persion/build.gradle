@@ -9,16 +9,7 @@ if (isRelease){
     apply plugin: 'com.android.application'
 }
 
-
-
-
-
-
 println("persion mudler ==>> setting.gradle")
-
-
-
-
 
 android {
     namespace 'cn.sichuan.cd.persion'
@@ -64,6 +55,16 @@ android {
     packagingOptions {
         resources {
             excludes += '/META-INF/{AL2.0,LGPL2.1}'
+        }
+    }
+
+
+
+    sourceSets{
+        main{
+            if (isRelease){
+
+            }
         }
     }
 }

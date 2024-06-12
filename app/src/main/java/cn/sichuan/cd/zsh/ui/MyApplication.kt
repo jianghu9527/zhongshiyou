@@ -1,8 +1,7 @@
-package cn.sichuan.cd.zsh.ui
+package cn.sichuan.cd.zzsy.ui
 
-import cn.sichuan.cd.zsh.BuildConfig
 import com.blankj.utilcode.util.LogUtils
-import cn.sichuan.cd.zsh.model.app.base.BaseApplication
+import cn.sichuan.cd.zzsy.model.app.base.BaseApplication
 
 import com.scwang.smart.refresh.header.ClassicsHeader
 import com.scwang.smart.refresh.layout.SmartRefreshLayout
@@ -24,7 +23,7 @@ class MyApplication : BaseApplication() {
         super.onCreate()
         instan=this;
         LogUtils.getConfig().run {
-            isLogSwitch = BuildConfig.DEBUG
+//            isLogSwitch = BuildConfig.DEBUG
             setSingleTagSwitch(true)
         }
     }

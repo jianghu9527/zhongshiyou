@@ -1,6 +1,6 @@
-package cn.sichuan.cd.zsh.model.app
+package cn.sichuan.cd.zzsy.model.app
 
-import cn.sichuan.cd.zsh.model.network.ExceptionHandle
+import cn.sichuan.cd.zzsy.model.network.ExceptionHandle
 import com.blankj.utilcode.util.ToastUtils
 import kotlinx.coroutines.CoroutineExceptionHandler
 

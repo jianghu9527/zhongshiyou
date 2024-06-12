@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.model.event
+package cn.sichuan.cd.zzsy.model.event
 
 
 class Message @JvmOverloads constructor(

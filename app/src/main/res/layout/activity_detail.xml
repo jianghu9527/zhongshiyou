@@ -5,7 +5,7 @@
         android:orientation="vertical">
 
 
-    <cn.sichuan.cd.zsh.ui.widget.MyWebView
+    <cn.sichuan.cd.zzsy.ui.widget.MyWebView
             android:id="@+id/wv_detail"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />

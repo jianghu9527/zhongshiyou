@@ -1,18 +1,18 @@
-package cn.sichuan.cd.zsh.ui.project
+package cn.sichuan.cd.zzsy.ui.project
 
 import androidx.databinding.ObservableArrayList
 
-import cn.sichuan.cd.zsh.model.app.base.BaseViewModel
-import cn.sichuan.cd.zsh.model.event.Message
-import cn.sichuan.cd.zsh.model.extend.getOrThrow
-import cn.sichuan.cd.zsh.ui.utils.InjectorUtil
+import cn.sichuan.cd.zzsy.model.app.base.BaseViewModel
+import cn.sichuan.cd.zzsy.model.event.Message
+import cn.sichuan.cd.zzsy.model.extend.getOrThrow
+import cn.sichuan.cd.zzsy.ui.utils.InjectorUtil
 import com.google.android.material.tabs.TabLayout
 
-import cn.sichuan.cd.zsh.ui.network.entity.ArticlesBean
-import cn.sichuan.cd.zsh.ui.network.NavTypeBean
+import cn.sichuan.cd.zzsy.ui.network.entity.ArticlesBean
+import cn.sichuan.cd.zzsy.ui.network.NavTypeBean
 import me.tatarka.bindingcollectionadapter2.ItemBinding
-import cn.sichuan.cd.zsh.R
-import cn.sichuan.cd.zsh.BR
+import cn.sichuan.cd.zzsy.R
+import cn.sichuan.cd.zzsy.BR
 
 /**
  *   @author : ck

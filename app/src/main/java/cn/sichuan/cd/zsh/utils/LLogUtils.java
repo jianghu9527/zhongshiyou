@@ -1,8 +1,9 @@
-package cn.sichuan.cd.zsh.utils;
+package cn.sichuan.cd.zzsy.utils;
 
 import android.util.Log;
 
-import cn.sichuan.cd.zsh.BuildConfig;
+import com.blankj.utilcode.BuildConfig;
+
 
 /**
  * @author L
@@ -10,28 +11,31 @@ import cn.sichuan.cd.zsh.BuildConfig;
  * @describe $
  */
 public class LLogUtils {
+
+
+    static  boolean isFlage = true;//BuildConfig.DEBUG;
     public static final String TAG = "----------日志输出------------";
 
     public static void log(String tag, String content) {
-        if (BuildConfig.DEBUG) {
+        if (isFlage) {
             Log.d(tag, content);
         }
     }
 
     public static void log(String content) {
-        if (BuildConfig.DEBUG) {
+        if (isFlage) {
             Log.e(TAG, content);
         }
     }
 
     public static void d(String content) {
-        if (BuildConfig.DEBUG) {
+        if (isFlage) {
             Log.d(TAG, content);
         }
     }
 
     public static void e(String content) {
-        if (BuildConfig.DEBUG) {
+        if (isFlage) {
             Log.e(TAG, content);
         }
     }

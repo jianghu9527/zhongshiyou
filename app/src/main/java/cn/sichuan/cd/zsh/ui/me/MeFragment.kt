@@ -1,10 +1,10 @@
-package cn.sichuan.cd.zsh.ui.me
+package cn.sichuan.cd.zzsy.ui.me
 
 import android.os.Bundle
-import cn.sichuan.cd.zsh.R
-import cn.sichuan.cd.zsh.databinding.MeFragmentBinding
+import cn.sichuan.cd.zzsy.R
+import cn.sichuan.cd.zzsy.databinding.MeFragmentBinding
 
-import cn.sichuan.cd.zsh.model.app.base.BaseVMFragment
+import cn.sichuan.cd.zzsy.model.app.base.BaseVMFragment
 
 
 class MeFragment : BaseVMFragment<MeViewModel, MeFragmentBinding>() {

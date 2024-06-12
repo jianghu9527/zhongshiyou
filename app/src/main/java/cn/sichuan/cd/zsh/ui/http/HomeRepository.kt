@@ -1,10 +1,10 @@
-package cn.sichuan.cd.zsh.ui.http
+package cn.sichuan.cd.zzsy.ui.http
 
  
-import cn.sichuan.cd.zsh.model.app.base.BaseModel
-import cn.sichuan.cd.zsh.model.app.base.BaseResult
-import cn.sichuan.cd.zsh.ui.network.entity.BannerBean
-import cn.sichuan.cd.zsh.ui.network.HomeListBean
+import cn.sichuan.cd.zzsy.model.app.base.BaseModel
+import cn.sichuan.cd.zzsy.model.app.base.BaseResult
+import cn.sichuan.cd.zzsy.ui.network.entity.BannerBean
+import cn.sichuan.cd.zzsy.ui.network.HomeListBean
 import kotlinx.coroutines.flow.Flow
 
 /**

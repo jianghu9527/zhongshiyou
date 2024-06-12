@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.zsh
+package cn.sichuan.cd.zzsy.zsh
 
 import android.Manifest
 import android.annotation.SuppressLint
@@ -13,8 +13,8 @@ import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
-import cn.sichuan.cd.zsh.R
-import cn.sichuan.cd.zsh.databinding.ActivityLoginBinding
+import cn.sichuan.cd.zzsy.R
+import cn.sichuan.cd.zzsy.databinding.ActivityLoginBinding
 
 import com.hjq.permissions.OnPermissionCallback
 import com.hjq.permissions.Permission

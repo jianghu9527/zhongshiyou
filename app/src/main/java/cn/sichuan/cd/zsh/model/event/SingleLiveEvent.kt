@@ -13,7 +13,7 @@
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-package cn.sichuan.cd.zsh.model.event
+package cn.sichuan.cd.zzsy.model.event
 
 import android.util.Log
 

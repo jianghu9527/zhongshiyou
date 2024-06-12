@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.ui
+package cn.sichuan.cd.zzsy.ui
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -8,13 +8,13 @@ import com.blankj.utilcode.util.BarUtils
 import com.blankj.utilcode.util.ColorUtils
 import com.blankj.utilcode.util.PermissionUtils
 
-import cn.sichuan.cd.zsh.model.app.base.BaseVMActivity
-import cn.sichuan.cd.zsh.model.app.base.NoViewModel
-import cn.sichuan.cd.zsh.ui.home.HomeFragment
-import cn.sichuan.cd.zsh.ui.me.MeFragment
-import cn.sichuan.cd.zsh.zsh.LogMangeUtil
-import cn.sichuan.cd.zsh.R
-import  cn.sichuan.cd.zsh.databinding.ActivityMainBinding
+import cn.sichuan.cd.zzsy.model.app.base.BaseVMActivity
+import cn.sichuan.cd.zzsy.model.app.base.NoViewModel
+import cn.sichuan.cd.zzsy.ui.home.HomeFragment
+import cn.sichuan.cd.zzsy.ui.me.MeFragment
+import cn.sichuan.cd.zzsy.R
+import  cn.sichuan.cd.zzsy.databinding.ActivityMainBinding
+import cn.sichuan.cd.zzsy.zsh.LogMangeUtil
 
 import com.pcl.mvvm.ui.project.ProjectFragment
 

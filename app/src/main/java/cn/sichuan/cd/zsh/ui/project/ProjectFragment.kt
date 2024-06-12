@@ -2,14 +2,14 @@ package com.pcl.mvvm.ui.project
 
 import android.content.Intent
 import android.os.Bundle
-import cn.sichuan.cd.zsh.R
-import cn.sichuan.cd.zsh.databinding.ProjectFragmentBinding
-import cn.sichuan.cd.zsh.model.app.base.BaseVMFragment
-import cn.sichuan.cd.zsh.model.event.Message
-import cn.sichuan.cd.zsh.ui.detail.DetailActivity
-import cn.sichuan.cd.zsh.ui.project.ProjectViewModel
+import cn.sichuan.cd.zzsy.R
+import cn.sichuan.cd.zzsy.databinding.ProjectFragmentBinding
+import cn.sichuan.cd.zzsy.model.app.base.BaseVMFragment
+import cn.sichuan.cd.zzsy.model.event.Message
+import cn.sichuan.cd.zzsy.ui.detail.DetailActivity
+import cn.sichuan.cd.zzsy.ui.project.ProjectViewModel
 
-import cn.sichuan.cd.zsh.ui.network.entity.ArticlesBean
+import cn.sichuan.cd.zzsy.ui.network.entity.ArticlesBean
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
 

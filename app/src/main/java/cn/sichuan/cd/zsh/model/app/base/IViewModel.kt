@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.model.app.base
+package cn.sichuan.cd.zzsy.model.app.base
 
 
 interface IViewModel {

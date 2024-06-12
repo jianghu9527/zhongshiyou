@@ -1,10 +1,10 @@
-package cn.sichuan.cd.zsh.ui.utils
+package cn.sichuan.cd.zzsy.ui.utils
 
 import android.util.Log
-import cn.sichuan.cd.zsh.model.adapter.FlowAdapterFactory
-import cn.sichuan.cd.zsh.ui.common.Constant.BASE_URL
-import cn.sichuan.cd.zsh.utils.LLogUtils
-import cn.sichuan.cd.zsh.zsh.LogMangeUtil
+import cn.sichuan.cd.zzsy.model.adapter.FlowAdapterFactory
+import cn.sichuan.cd.zzsy.ui.common.Constant.BASE_URL
+import cn.sichuan.cd.zzsy.utils.LLogUtils
+import cn.sichuan.cd.zzsy.zsh.LogMangeUtil
 import okhttp3.ConnectionPool
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor

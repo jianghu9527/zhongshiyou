@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.mvvm
+package cn.sichuan.cd.zzsy.mvvm
 
 import android.os.Bundle
 import android.widget.Toast
@@ -6,9 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import cn.sichuan.cd.zsh.R
-import cn.sichuan.cd.zsh.databinding.ActivityVLoginBinding
-import cn.sichuan.cd.zsh.zsh.LogMangeUtil
+import cn.sichuan.cd.zzsy.R
+import cn.sichuan.cd.zzsy.databinding.ActivityVLoginBinding
+import cn.sichuan.cd.zzsy.zsh.LogMangeUtil
 
 
 // LoginActivity.kt

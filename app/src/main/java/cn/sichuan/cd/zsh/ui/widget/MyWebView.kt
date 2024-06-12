@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.ui.widget
+package cn.sichuan.cd.zzsy.ui.widget
 
 import android.annotation.SuppressLint
 import android.content.Context

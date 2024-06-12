@@ -2,16 +2,32 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/gary"
     android:layout_height="match_parent">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
         android:textSize="20sp"
         android:textColor="@color/blue"
-        android:text="模块组件化"
-
+        android:text="模块组件化（APP壳子）"
+        android:layout_marginTop="@dimen/dp_30"
         />
+
+    <Button
+        android:onClick="toOrderModule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="订单"/>
+
+    <Button
+        android:onClick="toPersionModule"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginTop="@dimen/dp_30"
+        android:text="个人信息"/>
+
 
 </LinearLayout>

@@ -1,9 +1,9 @@
-package cn.sichuan.cd.zsh.model.app.base
+package cn.sichuan.cd.zzsy.model.app.base
 
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import androidx.viewbinding.ViewBinding
-import cn.sichuan.cd.zsh.model.app.extend.flowLaunch
+import cn.sichuan.cd.zzsy.model.app.extend.flowLaunch
 import java.lang.reflect.ParameterizedType
 
 /**

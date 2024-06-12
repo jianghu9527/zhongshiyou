@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.mvvm
+package cn.sichuan.cd.zzsy.mvvm
 
 import androidx.databinding.ObservableField
 

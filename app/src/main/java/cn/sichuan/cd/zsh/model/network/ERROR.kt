@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.model.network
+package cn.sichuan.cd.zzsy.model.network
 
 
 enum class ERROR(val code: Int, val err: String) {

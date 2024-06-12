@@ -1,11 +1,11 @@
-package cn.sichuan.cd.zsh.model.app.base
+package cn.sichuan.cd.zzsy.model.app.base
 
 import androidx.lifecycle.DefaultLifecycleObserver
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import cn.sichuan.cd.zsh.model.app.MVVMLin
-import cn.sichuan.cd.zsh.model.event.Message
-import cn.sichuan.cd.zsh.model.event.SingleLiveEvent
+import cn.sichuan.cd.zzsy.model.app.MVVMLin
+import cn.sichuan.cd.zzsy.model.event.Message
+import cn.sichuan.cd.zzsy.model.event.SingleLiveEvent
 
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.MutableSharedFlow

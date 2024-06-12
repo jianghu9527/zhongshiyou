@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh
+package cn.sichuan.cd.zzsy
 
 import org.junit.Test
 

@@ -1,13 +1,13 @@
-package cn.sichuan.cd.zsh.ui.home
+package cn.sichuan.cd.zzsy.ui.home
 
 import androidx.lifecycle.LiveData
-import cn.sichuan.cd.zsh.model.app.base.BaseViewModel
-import cn.sichuan.cd.zsh.model.event.SingleLiveEvent
-import cn.sichuan.cd.zsh.model.extend.asResponse
-import cn.sichuan.cd.zsh.model.extend.bindLoading
-import cn.sichuan.cd.zsh.ui.utils.InjectorUtil
-import cn.sichuan.cd.zsh.ui.network.entity.BannerBean
-import cn.sichuan.cd.zsh.ui.network.HomeListBean
+import cn.sichuan.cd.zzsy.model.app.base.BaseViewModel
+import cn.sichuan.cd.zzsy.model.event.SingleLiveEvent
+import cn.sichuan.cd.zzsy.model.extend.asResponse
+import cn.sichuan.cd.zzsy.model.extend.bindLoading
+import cn.sichuan.cd.zzsy.ui.utils.InjectorUtil
+import cn.sichuan.cd.zzsy.ui.network.entity.BannerBean
+import cn.sichuan.cd.zzsy.ui.network.HomeListBean
 
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow

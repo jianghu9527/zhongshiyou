@@ -6,10 +6,10 @@
     <data>
         <variable
             name="viewModel"
-            type="cn.sichuan.cd.zsh.mvvm.LoginViewModel" />
+            type="cn.sichuan.cd.zzsy.mvvm.LoginViewModel" />
         <variable
             name="userinformation"
-            type="cn.sichuan.cd.zsh.mvvm.UserInfo" />
+            type="cn.sichuan.cd.zzsy.mvvm.UserInfo" />
 
 
 

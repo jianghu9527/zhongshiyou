@@ -13,7 +13,7 @@ v1.0.2
 
 V1.0.3
 
-cn.sichuan.cd.zsh
+cn.sichuan.cd.zzsy
 修改包路径
 com.efficient.cd.production.app
  
@@ -27,14 +27,13 @@ mvvm.LoginsActivity  面试 项目结构mvvm  databinding
 ModuleActivity  模块组件化
 三个子模块
 
-
 LoginViewModel  模块注意线程切换
 viewModelScope.launch (Dispatchers.IO){
 val user =   repository.loadAllUsers();
-
       _UserData.postValue(user);
-
         }
 
 注意参数：isRelease  是否是多模块模式 
-
+ 
+垮模块跳转
+Aroute 

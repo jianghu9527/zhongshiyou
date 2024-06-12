@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.model.network
+package cn.sichuan.cd.zzsy.model.network
 
 import android.net.ParseException
 import com.google.gson.JsonParseException

@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.model.app.base
+package cn.sichuan.cd.zzsy.model.app.base
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -10,12 +10,12 @@ import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Lifecycle
 import androidx.viewbinding.ViewBinding
-import cn.sichuan.cd.zsh.R
+import cn.sichuan.cd.zzsy.R
 import com.afollestad.materialdialogs.MaterialDialog
 import com.afollestad.materialdialogs.customview.customView
 import com.afollestad.materialdialogs.lifecycle.lifecycleOwner
 
-import cn.sichuan.cd.zsh.model.event.Message
+import cn.sichuan.cd.zzsy.model.event.Message
 import java.lang.reflect.ParameterizedType
 
 

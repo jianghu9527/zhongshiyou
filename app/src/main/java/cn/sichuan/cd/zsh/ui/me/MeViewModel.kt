@@ -1,10 +1,10 @@
-package cn.sichuan.cd.zsh.ui.me
+package cn.sichuan.cd.zzsy.ui.me
 
 
-import cn.sichuan.cd.zsh.model.app.base.BaseViewModel
-import cn.sichuan.cd.zsh.model.extend.getOrThrow
-import cn.sichuan.cd.zsh.ui.utils.InjectorUtil
-import cn.sichuan.cd.zsh.ui.network.UsedWeb
+import cn.sichuan.cd.zzsy.model.app.base.BaseViewModel
+import cn.sichuan.cd.zzsy.model.extend.getOrThrow
+import cn.sichuan.cd.zzsy.ui.utils.InjectorUtil
+import cn.sichuan.cd.zzsy.ui.network.UsedWeb
 
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharedFlow

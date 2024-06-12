@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.fragment;
+package cn.sichuan.cd.zzsy.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import cn.sichuan.cd.zsh.R;
+import cn.sichuan.cd.zzsy.R;
 
 public class HomeFragment extends Fragment {
 

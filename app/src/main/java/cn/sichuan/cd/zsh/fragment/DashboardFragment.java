@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.fragment;
+package cn.sichuan.cd.zzsy.fragment;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -9,8 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import cn.sichuan.cd.zsh.R;
-import cn.sichuan.cd.zsh.generated.callback.OnClickListener;
+import cn.sichuan.cd.zzsy.R;
+import cn.sichuan.cd.zzsy.generated.callback.OnClickListener;
 
 public class DashboardFragment extends Fragment {
 

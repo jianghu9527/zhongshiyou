@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.fragment;
+package cn.sichuan.cd.zzsy.fragment;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
@@ -6,7 +6,7 @@ import android.util.Log;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import cn.sichuan.cd.zsh.R;
+import cn.sichuan.cd.zzsy.R;
 
 public class MainFragment extends AppCompatActivity {
 

@@ -5,11 +5,11 @@
 
         <variable
                 name="itemBean"
-                type="cn.sichuan.cd.zsh.ui.network.entity.ArticlesBean" />
+                type="cn.sichuan.cd.zzsy.ui.network.entity.ArticlesBean" />
 
         <variable
                 name="listenner"
-                type="cn.sichuan.cd.zsh.ui.project.ProjectViewModel.OnItemClickListener" />
+                type="cn.sichuan.cd.zzsy.ui.project.ProjectViewModel.OnItemClickListener" />
 
     </data>
 

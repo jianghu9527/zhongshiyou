@@ -1,19 +1,24 @@
-package cn.sichuan.cd.zsh.module;
+package cn.sichuan.cd.zzsy.module;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.Menu;
+import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import cn.sichuan.cd.common.LoginManager;
 import cn.sichuan.cd.common.NetManageUtils;
-import cn.sichuan.cd.zsh.R;
-import cn.sichuan.cd.zsh.zsh.LogMangeUtil;
+import cn.sichuan.cd.order.OrderMainActivity;
+import cn.sichuan.cd.order.Order_MainActivity;
+import cn.sichuan.cd.zzsy.R;
+import cn.sichuan.cd.zzsy.zsh.LogMangeUtil;
 
 
 /**
  * 模块组件化
+ *
+ * 壳子
  */
 public class ModuleActivity extends AppCompatActivity {
 
@@ -28,5 +33,17 @@ public class ModuleActivity extends AppCompatActivity {
         LogMangeUtil.d("-------------------ModuleActivity---------------1111-------");
 
 
+
     }
+
+    public void toOrderModule(View view){
+
+        startActivity(new Intent(ModuleActivity.this, Order_MainActivity.class));
+    }
+
+
+    public void toPersionModule(View view){
+        startActivity(new Intent(ModuleActivity.this, OrderMainActivity.class));
+    }
+
 }

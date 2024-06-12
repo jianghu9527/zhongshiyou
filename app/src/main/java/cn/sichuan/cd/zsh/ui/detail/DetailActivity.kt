@@ -1,12 +1,12 @@
-package cn.sichuan.cd.zsh.ui.detail
+package cn.sichuan.cd.zzsy.ui.detail
 
 import android.os.Bundle
 import android.webkit.WebResourceRequest
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
-import cn.sichuan.cd.zsh.databinding.ActivityDetailBinding
-import cn.sichuan.cd.zsh.model.app.base.BaseActivity
+import cn.sichuan.cd.zzsy.databinding.ActivityDetailBinding
+import cn.sichuan.cd.zzsy.model.app.base.BaseActivity
 
 
 class DetailActivity : BaseActivity<ActivityDetailBinding>() {

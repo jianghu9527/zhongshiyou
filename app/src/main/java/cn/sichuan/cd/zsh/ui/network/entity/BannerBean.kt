@@ -1,4 +1,4 @@
-package cn.sichuan.cd.zsh.ui.network.entity
+package cn.sichuan.cd.zzsy.ui.network.entity
 
 /**
  * @author : ck

@@ -1,10 +1,10 @@
-package cn.sichuan.cd.zsh.model.extend
+package cn.sichuan.cd.zzsy.model.extend
 
-import cn.sichuan.cd.zsh.model.app.base.IBaseResponse
-import cn.sichuan.cd.zsh.model.app.base.IViewModel
-import cn.sichuan.cd.zsh.model.network.ERROR
-import cn.sichuan.cd.zsh.model.network.ExceptionHandle
-import cn.sichuan.cd.zsh.model.network.ResponseThrowable
+import cn.sichuan.cd.zzsy.model.app.base.IBaseResponse
+import cn.sichuan.cd.zzsy.model.app.base.IViewModel
+import cn.sichuan.cd.zzsy.model.network.ERROR
+import cn.sichuan.cd.zzsy.model.network.ExceptionHandle
+import cn.sichuan.cd.zzsy.model.network.ResponseThrowable
 
 
 import kotlinx.coroutines.flow.*

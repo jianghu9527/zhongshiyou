@@ -13,11 +13,11 @@ println("app mudler ==>> setting.gradle   username= ${username}")
 
 
 android {
-    namespace 'cn.sichuan.cd.zsh'
+    namespace 'cn.sichuan.cd.zzsy'
     compileSdk compileSdk_app
 
     defaultConfig {
-        applicationId "cn.sichuan.cd.zsh"
+        applicationId "cn.sichuan.cd.zzsy"
         minSdk minSdk_app
         targetSdk targetSdk_app
         versionCode versionCode_app
@@ -47,9 +47,7 @@ android {
         abortOnError false
     }
 
-    dexOptions {
-        javaMaxHeapSize "2g"
-    }
+
 
     packagingOptions {
         pickFirst '**/libc++_shared.so'
@@ -97,6 +95,7 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.navigation:navigation-runtime:2.7.7'
     implementation project(':Common')
+    implementation project(':order')
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
