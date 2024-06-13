@@ -9,10 +9,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.scwang.smart.drawable.paint.BuildConfig;
 
+import cn.sichuan.cd.common.BaseCommonApplication;
 import cn.sichuan.cd.common.LoginManager;
 import cn.sichuan.cd.common.NetManageUtils;
 import cn.sichuan.cd.order.OrderMainActivity;
 import cn.sichuan.cd.order.Order_MainActivity;
+import cn.sichuan.cd.zsh.utils.WorkManagerHelper;
 import cn.sichuan.cd.zzsy.R;
 import cn.sichuan.cd.zzsy.zsh.LogMangeUtil;
 
@@ -31,10 +33,7 @@ public class ModuleActivity extends AppCompatActivity {
         LogMangeUtil.d("-------------------ModuleActivity---------------000-------");
         new NetManageUtils().NetStat(true);
         LoginManager.INSTANCE.login("ck","123456");
-
-        LogMangeUtil.d("-------------------ModuleActivity---------------1111-------"+ BuildConfig.VERSION_NAME);
-
-
+        LogMangeUtil.d("-------------------ModuleActivity---------------1111-------"+ BuildConfig.BUILD_TYPE);
 
     }
 
@@ -47,5 +46,9 @@ public class ModuleActivity extends AppCompatActivity {
     public void toPersionModule(View view){
         startActivity(new Intent(ModuleActivity.this, OrderMainActivity.class));
     }
+    public void toWorkManager(View view){
+        WorkManagerHelper.schedulePeriodicWork(this);
+    }
+
 
 }

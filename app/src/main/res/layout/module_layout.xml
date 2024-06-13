@@ -29,5 +29,12 @@
        android:layout_marginTop="@dimen/dp_30"
         android:text="个人信息"/>
 
+    <Button
+        android:onClick="toWorkManager"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_30"
+        android:text="执行后台运行的线程"/>
+
 
 </LinearLayout>
