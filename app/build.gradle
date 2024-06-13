@@ -5,10 +5,9 @@ plugins {
     id("kotlin-parcelize")
     id("kotlin-kapt")
 
+
 }
 apply  from  : "../app_config.gradle"
-
-
 println("app mudler ==>> setting.gradle   username= ${username}")
 
 
@@ -29,10 +28,10 @@ android {
         ndk {
             abiFilters 'arm64-v8a',"x86"
         }
-
-
+        vectorDrawables {
+            useSupportLibrary = true
+        }
     }
-
 
     buildFeatures {
         viewBinding true
@@ -48,9 +47,12 @@ android {
         checkReleaseBuilds false
         abortOnError false
     }
-
-
-
+    buildFeatures {
+        compose true
+    }
+    composeOptions{
+        kotlinCompilerExtensionVersion ExtensionVersion
+    }
     packagingOptions {
         pickFirst '**/libc++_shared.so'
     }
@@ -112,14 +114,13 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 
-//    implementation "androidx.compose.ui:ui:1.3.0"
 
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
     implementation("androidx.room:room-common:2.6.1")
     kapt("androidx.room:room-compiler:2.6.1")
 
-    implementation "androidx.activity:activity-ktx:1.5.0-alpha03"
+
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.7.0")
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
@@ -168,5 +169,22 @@ dependencies {
         implementation project(":order")
         implementation project(":persion")
     }
+
+
+    debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
+    debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
+    androidTestImplementation "androidx.compose.ui:ui-test-junit4:$compose_version"
+    implementation 'androidx.activity:activity-compose:1.7.2'
+    implementation "androidx.compose.ui:ui:$compose_version"
+    implementation "androidx.compose.ui:ui-android:$compose_version"
+
+    implementation "androidx.compose.ui:ui-tooling-preview:$compose_version"
+    implementation 'androidx.compose.material3:material3:1.1.1'
+    debugImplementation "androidx.compose.ui:ui-tooling:$compose_version"
+    debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
+
+    implementation "androidx.activity:activity-compose:$kotlinVersion"
+    implementation "androidx.activity:activity-ktx:$kotlinVersion"
+
 
 }

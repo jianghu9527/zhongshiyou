@@ -14,6 +14,7 @@ import cn.sichuan.cd.common.LoginManager;
 import cn.sichuan.cd.common.NetManageUtils;
 import cn.sichuan.cd.order.OrderMainActivity;
 import cn.sichuan.cd.order.Order_MainActivity;
+import cn.sichuan.cd.zsh.compose.ComposeManager;
 import cn.sichuan.cd.zsh.utils.WorkManagerHelper;
 import cn.sichuan.cd.zzsy.R;
 import cn.sichuan.cd.zzsy.zsh.LogMangeUtil;
@@ -46,6 +47,12 @@ public class ModuleActivity extends AppCompatActivity {
     public void toPersionModule(View view){
         startActivity(new Intent(ModuleActivity.this, OrderMainActivity.class));
     }
+    public void toCompose(View view){
+        startActivity(new Intent(ModuleActivity.this, ComposeManager.class));
+    }
+
+
+
     public void toWorkManager(View view){
         WorkManagerHelper.schedulePeriodicWork(this);
     }

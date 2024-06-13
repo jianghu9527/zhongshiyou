@@ -61,6 +61,10 @@
             android:name="ScopedStorage"
             android:value="true" />
 
+        <activity android:name="cn.sichuan.cd.zsh.compose.ComposeManager">
+
+        </activity>
+
     </application>
 
 </manifest>
