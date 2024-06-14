@@ -37,12 +37,7 @@ public class ModuleActivity extends AppCompatActivity {
         LoginManager.INSTANCE.login("ck","123456");
         LogMangeUtil.d("-------------------ModuleActivity-------------BUILD_TIME:"+ BuildConfig.BUILD_TIME);
 
-//        if(BuildConfig.){
-//            Log.i(TAG, "onCreate: 集成化环境");
-//        }else{
-//            Log.i(TAG, "onCreate: 组件化环境");
-//        }
-//        if(BuildConfig.isRe){}
+
         LogMangeUtil.d("-------------------ModuleActivity----------IS_RELEASE:"+ BuildConfig.IS_RELEASE);
             if (BuildConfig.IS_RELEASE){
                 Log.i("-------------------", "onCreate: 集成化环境");
