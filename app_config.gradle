@@ -5,7 +5,6 @@ ext {
   //是否是发布模式
     isRelease=true   //true false
 
-
     username="zsh_ck";
 
     compileSdk_app =34

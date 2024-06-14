@@ -31,6 +31,8 @@ android {
         vectorDrawables {
             useSupportLibrary = true
         }
+
+        buildConfigField "boolean", "IS_RELEASE", "${isRelease}"
     }
 
     buildFeatures {

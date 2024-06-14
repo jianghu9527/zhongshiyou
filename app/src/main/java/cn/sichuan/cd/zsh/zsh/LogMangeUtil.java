@@ -18,7 +18,7 @@ public class LogMangeUtil {
 
 
 //    public static boolean isDebug = BuildConfig.DEBUG;// 是否需要打印bug，可以在application的onCreate函数里面初始化
-        public static boolean isDebug = false  ;// 是否需要打印bug，可以在application的onCreate函数里面初始化
+        public static boolean isDebug = true  ;// 是否需要打印bug，可以在application的onCreate函数里面初始化
     public static String TAG="------------日志---------";
 
     //因为String的length是字符数量不是字节数量所以为了防止中文字符过多，

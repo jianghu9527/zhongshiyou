@@ -2,12 +2,12 @@ package cn.sichuan.cd.zzsy.module;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.scwang.smart.drawable.paint.BuildConfig;
 
 import cn.sichuan.cd.common.BaseCommonApplication;
 import cn.sichuan.cd.common.LoginManager;
@@ -16,6 +16,7 @@ import cn.sichuan.cd.order.OrderMainActivity;
 import cn.sichuan.cd.order.Order_MainActivity;
 import cn.sichuan.cd.zsh.compose.ComposeManager;
 import cn.sichuan.cd.zsh.utils.WorkManagerHelper;
+import cn.sichuan.cd.zzsy.BuildConfig;
 import cn.sichuan.cd.zzsy.R;
 import cn.sichuan.cd.zzsy.zsh.LogMangeUtil;
 
@@ -34,7 +35,25 @@ public class ModuleActivity extends AppCompatActivity {
         LogMangeUtil.d("-------------------ModuleActivity---------------000-------");
         new NetManageUtils().NetStat(true);
         LoginManager.INSTANCE.login("ck","123456");
-        LogMangeUtil.d("-------------------ModuleActivity---------------1111-------"+ BuildConfig.BUILD_TYPE);
+        LogMangeUtil.d("-------------------ModuleActivity-------------BUILD_TIME:"+ BuildConfig.BUILD_TIME);
+
+//        if(BuildConfig.){
+//            Log.i(TAG, "onCreate: 集成化环境");
+//        }else{
+//            Log.i(TAG, "onCreate: 组件化环境");
+//        }
+//        if(BuildConfig.isRe){}
+        LogMangeUtil.d("-------------------ModuleActivity----------IS_RELEASE:"+ BuildConfig.IS_RELEASE);
+            if (BuildConfig.IS_RELEASE){
+                Log.i("-------------------", "onCreate: 集成化环境");
+            }else{
+                Log.i("-------------------", "onCreate: 组件化环境");
+            }
+
+
+
+
+
 
     }
 

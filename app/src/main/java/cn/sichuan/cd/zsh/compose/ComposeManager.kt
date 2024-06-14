@@ -42,6 +42,7 @@ class ComposeManager :ComponentActivity() {
 //        setContent {
 //            Messaage("my name:")
 //        }
+
     }
 }
 @Composable
